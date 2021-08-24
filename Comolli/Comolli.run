@@ -1,0 +1,7 @@
+reset;
+model Comolli.mod
+data Comolli.dat
+option solver 'cplex';
+#option omit_zero_rows 1;
+solve;
+display tot_clicks, Y, XR, XG, XB, XP;
